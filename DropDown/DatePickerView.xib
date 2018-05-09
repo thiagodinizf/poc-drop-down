@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DatePickerView" customModule="DropDown" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="tpb-cp-X8Z">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ikt-3p-Qmd" customClass="UIButton">
+                            <rect key="frame" x="0.0" y="0.0" width="71" height="44"/>
+                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="click:" destination="iN0-l3-epB" eventType="touchUpInside" id="lPD-LD-ExE"/>
+                            </connections>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="guv-iJ-iXl" customClass="UIButton">
+                            <rect key="frame" x="76" y="0.0" width="71" height="44"/>
+                            <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="click:" destination="iN0-l3-epB" eventType="touchUpInside" id="IQW-xh-Mnw"/>
+                            </connections>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jm4-VZ-twf" customClass="UIButton">
+                            <rect key="frame" x="152" y="0.0" width="71" height="44"/>
+                            <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="click:" destination="iN0-l3-epB" eventType="touchUpInside" id="1dD-oY-5YS"/>
+                            </connections>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ha5-qk-XSe" customClass="UIButton">
+                            <rect key="frame" x="228" y="0.0" width="71" height="44"/>
+                            <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="click:" destination="iN0-l3-epB" eventType="touchUpInside" id="Eu2-Rw-ZqM"/>
+                            </connections>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A02-SN-GLy" customClass="UIButton">
+                            <rect key="frame" x="304" y="0.0" width="71" height="44"/>
+                            <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="click:" destination="iN0-l3-epB" eventType="touchUpInside" id="NhA-Qe-GcB"/>
+                            </connections>
+                        </view>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="tpb-cp-X8Z" secondAttribute="trailing" id="IKV-lw-QHZ"/>
+                <constraint firstItem="tpb-cp-X8Z" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="TfG-KE-fgH"/>
+                <constraint firstItem="tpb-cp-X8Z" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="pUQ-w7-WcK"/>
+                <constraint firstAttribute="bottom" secondItem="tpb-cp-X8Z" secondAttribute="bottom" id="vND-6c-rsM"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="stackView" destination="tpb-cp-X8Z" id="6xC-e4-lQe"/>
+                <outletCollection property="labels" destination="ikt-3p-Qmd" collectionClass="NSMutableArray" id="b2v-in-y4m"/>
+                <outletCollection property="labels" destination="guv-iJ-iXl" collectionClass="NSMutableArray" id="kg2-hO-agz"/>
+                <outletCollection property="labels" destination="Jm4-VZ-twf" collectionClass="NSMutableArray" id="AFO-YM-DUk"/>
+                <outletCollection property="labels" destination="Ha5-qk-XSe" collectionClass="NSMutableArray" id="v3B-1D-bX2"/>
+                <outletCollection property="labels" destination="A02-SN-GLy" collectionClass="NSMutableArray" id="9rS-La-8Ja"/>
+            </connections>
+            <point key="canvasLocation" x="1" y="-173"/>
+        </view>
+    </objects>
+</document>
